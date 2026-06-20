@@ -1,0 +1,32 @@
+{
+  "SDKVersion": 2,
+  "Author": "Brendan Welsh",
+  "Name": "OBS Telestrator",
+  "Description": "Control the OBS Telestrator from your Stream Deck via obs-websocket: toggle drawing, cycle tools/colors, undo, clear, laser, screenshot, freeze, and instant-replay markup.",
+  "Category": "OBS Telestrator",
+  "CategoryIcon": "icons/category",
+  "Icon": "icons/plugin",
+  "URL": "https://github.com/brendanwelsh/obs-telestrator-streamdeck",
+  "Version": "1.0.0",
+  "CodePath": "app.html",
+  "PropertyInspectorPath": "pi.html",
+  "OS": [
+    { "Platform": "windows", "MinimumVersion": "10" }
+  ],
+  "Software": {
+    "MinimumVersion": "5.0"
+  },
+  "Actions": [
+    {
+      "UUID": "com.brendanwelsh.telestrator.command",
+      "Name": "Telestrator Command",
+      "Tooltip": "Fire a telestrator command in OBS (pick which in the inspector).",
+      "Icon": "icons/action",
+      "PropertyInspectorPath": "pi.html",
+      "SupportedInMultiActions": true,
+      "States": [
+        { "Image": "icons/key", "TitleAlignment": "bottom", "FontSize": "9" }
+      ]
+    }
+  ]
+}

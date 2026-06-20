@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>OBS Telestrator Settings</title>
+  <style>
+    body { font-family: -apple-system, "Segoe UI", sans-serif; font-size: 12px;
+           color: #d8d8d8; background: #2d2d2d; margin: 0; padding: 8px 10px; }
+    .row { display: flex; align-items: center; margin: 6px 0; }
+    .row label { flex: 0 0 96px; text-align: right; padding-right: 8px; color: #9a9a9a; }
+    .row input, .row select { flex: 1 1 auto; background: #3d3d3d; color: #fff;
+           border: 1px solid #4a4a4a; border-radius: 4px; padding: 4px 6px; min-width: 0; }
+    .group-title { margin: 12px 0 2px; color: #7a7a7a; text-transform: uppercase;
+           font-size: 10px; letter-spacing: .5px; border-bottom: 1px solid #444; padding-bottom: 3px; }
+    .hint { color: #7a7a7a; font-size: 10px; margin: 2px 0 4px 104px; }
+    details summary { cursor: pointer; color: #9a9a9a; margin: 10px 0 4px; }
+    optgroup { color: #9a9a9a; }
+  </style>
+</head>
+<body>
+  <div class="group-title">Command</div>
+  <div class="row">
+    <label for="command">This key</label>
+    <select id="command">
+      <optgroup label="Drawing">
+        <option value="toggle">Toggle Drawing On/Off</option>
+        <option value="tool">Cycle Tool</option>
+        <option value="color">Cycle Color</option>
+        <option value="size">Cycle Brush Size</option>
+        <option value="eraser">Toggle Eraser</option>
+        <option value="laser">Toggle Laser (temp ink)</option>
+        <option value="undo">Undo</option>
+        <option value="redo">Redo</option>
+        <option value="clear">Clear</option>
+      </optgroup>
+      <optgroup label="OBS / broadcast">
+        <option value="screenshot">Save Screenshot</option>
+        <option value="freeze">Toggle Freeze</option>
+        <option value="replay">Save Replay Buffer</option>
+        <option value="replaymarkup">Instant Replay + Markup</option>
+        <option value="golive">Go Live (back to live scene)</option>
+      </optgroup>
+    </select>
+  </div>
+
+  <div class="group-title">OBS connection</div>
+  <div class="row"><label for="obsHost">Host</label><input id="obsHost" type="text" placeholder="127.0.0.1" /></div>
+  <div class="row"><label for="obsPort">Port</label><input id="obsPort" type="number" placeholder="4455" /></div>
+  <div class="row"><label for="obsPassword">Password</label><input id="obsPassword" type="password" placeholder="(obs-websocket password)" /></div>
+  <div class="hint">OBS → Tools → WebSocket Server Settings. Shared across all keys.</div>
+
+  <details>
+    <summary>Advanced (screenshot / freeze / replay)</summary>
+    <div class="row"><label for="screenshotFolder">Screenshot folder</label><input id="screenshotFolder" type="text" placeholder="C:\Users\you\Pictures" /></div>
+    <div class="row"><label for="freezeSource">Freeze source</label><input id="freezeSource" type="text" placeholder="source name" /></div>
+    <div class="row"><label for="freezeFilter">Freeze filter</label><input id="freezeFilter" type="text" placeholder="Freeze" /></div>
+    <div class="hint">Freeze needs a "Freeze" filter (StreamFX) on that source.</div>
+    <div class="row"><label for="replayScene">Replay scene</label><input id="replayScene" type="text" placeholder="Replay" /></div>
+    <div class="row"><label for="replaySource">Replay media source</label><input id="replaySource" type="text" placeholder="ReplayClip" /></div>
+    <div class="row"><label for="liveScene">Live scene</label><input id="liveScene" type="text" placeholder="Live" /></div>
+    <div class="hint">For Instant Replay + Markup. See the plugin README for one-time setup.</div>
+  </details>
+
+  <script src="pi.js"></script>
+</body>
+</html>
