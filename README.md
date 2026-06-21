@@ -43,12 +43,12 @@ This is a no-build classic plugin — just drop the folder into Stream Deck's
 plugins directory:
 
 1. Quit the Stream Deck app.
-2. Copy `com.brendanwelsh.telestrator.sdPlugin` into:
+2. Copy `com.welsh.telestrator.sdPlugin` into:
    `%APPDATA%\Elgato\StreamDeck\Plugins\`
 3. Start the Stream Deck app. "OBS Telestrator" appears in the actions list.
 
 (During development you can symlink instead:
-`mklink /D "%APPDATA%\Elgato\StreamDeck\Plugins\com.brendanwelsh.telestrator.sdPlugin" "<repo>\com.brendanwelsh.telestrator.sdPlugin"`.)
+`mklink /D "%APPDATA%\Elgato\StreamDeck\Plugins\com.welsh.telestrator.sdPlugin" "<repo>\com.welsh.telestrator.sdPlugin"`.)
 
 ## Configure
 

@@ -18,7 +18,7 @@
   },
   "Actions": [
     {
-      "UUID": "com.brendanwelsh.telestrator.command",
+      "UUID": "com.welsh.telestrator.command",
       "Name": "Telestrator Command",
       "Tooltip": "Fire a telestrator command in OBS (pick which in the inspector).",
       "Icon": "icons/action",

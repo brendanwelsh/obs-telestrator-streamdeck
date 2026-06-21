@@ -9,7 +9,7 @@
 (function () {
   "use strict";
 
-  var ACTION_UUID = "com.brendanwelsh.telestrator.command";
+  var ACTION_UUID = "com.welsh.telestrator.command";
 
   // command -> OBS Telestrator hotkey name (see obs-telestrator/whiteboard.lua)
   var HOTKEY = {
