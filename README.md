@@ -1,3 +1,11 @@
+> # ⚠️ Moved
+> This plugin now lives in the **[obs-telestrator monorepo](https://github.com/brendanwelsh/obs-telestrator)**,
+> under [`streamdeck/`](https://github.com/brendanwelsh/obs-telestrator/tree/main/streamdeck),
+> alongside the engine and the in-OBS browser dock. This standalone repo is
+> **archived** and no longer updated — get the latest there.
+
+---
+
 # OBS Telestrator — Stream Deck plugin
 
 Control the [**OBS Telestrator**](https://github.com/brendanwelsh/obs-telestrator)
