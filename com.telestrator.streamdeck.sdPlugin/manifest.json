@@ -2,7 +2,7 @@
   "SDKVersion": 2,
   "Author": "Brendan Welsh",
   "Name": "OBS Telestrator",
-  "Description": "Control the OBS Telestrator from your Stream Deck via obs-websocket: toggle drawing, cycle tools/colors, undo, clear, laser, screenshot, freeze, and instant-replay markup.",
+  "Description": "Control the OBS Telestrator from your Stream Deck over obs-websocket.",
   "Category": "OBS Telestrator",
   "CategoryIcon": "icons/category",
   "Icon": "icons/plugin",

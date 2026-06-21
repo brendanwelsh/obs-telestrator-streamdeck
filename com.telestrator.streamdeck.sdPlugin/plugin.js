@@ -11,17 +11,17 @@
 
   var ACTION_UUID = "com.telestrator.streamdeck.command";
 
-  // command -> OBS Telestrator hotkey name (see obs-telestrator/whiteboard.lua)
+  // command -> OBS Telestrator hotkey name (see obs-telestrator/telestrator.lua)
   var HOTKEY = {
-    toggle: "whiteboard.toggle",
-    tool:   "whiteboard.toolcycle",
-    color:  "whiteboard.colorswap",
-    size:   "whiteboard.sizetoggle",
-    undo:   "whiteboard.undo",
-    redo:   "whiteboard.redo",
-    clear:  "whiteboard.clear",
-    eraser: "whiteboard.erasertoggle",
-    laser:  "whiteboard.laser"
+    toggle: "telestrator.toggle",
+    tool:   "telestrator.toolcycle",
+    color:  "telestrator.colorswap",
+    size:   "telestrator.sizetoggle",
+    undo:   "telestrator.undo",
+    redo:   "telestrator.redo",
+    clear:  "telestrator.clear",
+    eraser: "telestrator.erasertoggle",
+    laser:  "telestrator.laser"
   };
 
   var sd = null;          // Stream Deck websocket

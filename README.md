@@ -102,7 +102,7 @@ fields under **Advanced** in the inspector (also shared across keys).
 ```
 Stream Deck key  ──►  this plugin (Node/JS in Stream Deck)  ──obs-websocket v5──►  OBS
                                                                                     │
-                                                          TriggerHotkeyByName  ─────┤──►  whiteboard.lua
+                                                          TriggerHotkeyByName  ─────┤──►  telestrator.lua
                                                           SaveSourceScreenshot ─────┤
                                                           SaveReplayBuffer / ... ───┘
 ```
